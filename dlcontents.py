@@ -1,5 +1,5 @@
 '''
-Read the list of urls and download the contents
+Read a list of urls and download the contents in the urls
 '''
 
 import urllib.request
