@@ -26,7 +26,7 @@ while url != '':	#============================ start of the main loop
 	url_count = urldict.get(url, 0)
 	
 	if url_count == 0:	# the first time for this url
-											# ok, let's start the preparation --------------
+				# ok, let's start the preparation --------------
 		
 		urldict[url] = 1	
 		seq += 1
@@ -53,7 +53,7 @@ while url != '':	#============================ start of the main loop
 		time.sleep(wait)
 		
 		# end of the main processing --------------------------------------
-	else:								# urldict[url] > 0, i.e. this url has appeared in the past 
+	else:	# urldict[url] > 0, i.e. this url has appeared in the past 
 		urldict[url] += 1	# just count up. no need to download the same contents again
 		
 	url = f.readline()
